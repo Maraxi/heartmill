@@ -816,3 +816,20 @@ nav img {
   border:none;
   height:1.9ex;
 }
+
+.fancy-link {
+  background-image: linear-gradient(orange, orange);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 0 3px;
+  transition: background-size 0.4s linear, color 0.4s, background-position 0.3s cubic-bezier(.2,1,0,1);
+}
+
+.fancy-link:hover {
+  text-decoration: none;
+  background-size: 100% 3px;
+  background-position: bottom left;
+  color: orange;
+  transition: background-size 0.6s ease-in-out, color 0.6s;
+
+}
