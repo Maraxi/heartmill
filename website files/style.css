@@ -765,9 +765,13 @@ footer.options {
 		height:70vw;
 	}
 
-	ul.hGallery li img {
+	ul.hGallery li img, ul.hGallery li iframe {
 		height:70vw;
 	}
+	
+ ul.hGallery li iframe {
+width: min(calc(70vw / 9 * 16), calc((100vh - 90px - 90px) / 9 * 16));
+}
 
 	ul.hGallery li.dustJacketText {
 		height:calc(100vh - 100px - 2.5ex);
