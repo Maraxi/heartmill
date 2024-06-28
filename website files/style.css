@@ -240,6 +240,11 @@ ul.hGallery li > a {
 	text-decoration: none;
 }
 
+.hGallery a:hover h2 {
+	font-weight: 500;
+	color: var(--grey-450);
+}
+
 ul.hGallery li div.img {
 	height:500px;
 	height:50vw;
