@@ -59,15 +59,16 @@ display:inline;
 html {
 	width:100%;
 	height:100%;
+	scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 body {
 	margin:0;
 	padding:0 0 0 0;
-	/*display: -webkit-box;*/
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
 	height:100%;
 	width:100%;
 font-weight:400;
@@ -104,18 +105,23 @@ h3 {
 }
 
 
+header {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 body > header {
 	background:white;
 	width: 100%;
-	height:90px;
 	-webkit-flex: 0 1 auto;
 	flex-grow: 0;
+	margin-bottom: 10px;
 }
 
 header hgroup {
 	margin:0;
 	padding:0.25em 0.6em 0 20px;
-	float:left;
+	flex-grow: 1;
 }
 
 header h1, header h2 {
@@ -134,7 +140,6 @@ header h2 {
 
 
 header nav {
-	float:right;
 	font-size:20px;
 	font-weight:400;
 	font-family:'Josefin Sans';
@@ -142,7 +147,7 @@ header nav {
 }
 
 header nav ul {
-	margin: 2.35em 1em;
+	margin: 2.35em 1em 0 1em;
 	padding: 0;
 	list-style-type: none;
 }
@@ -166,13 +171,26 @@ header nav ul li ~ li::before {
 }
 
 #Main {
-	-webkit-flex:1 1 auto;
-	flex-grow:1;
-	flex-shrink: 1;
-	overflow-x: auto;
-	overflow-y: hidden;
+	--height: calc(100vh - 100px);
+	--negative-height: calc(-1 * var(--height));
+	--width: 100vw;
+	overflow-x: hidden;
+	overflow-y: auto;
 	position: relative;
-	width:100%;
+	width: var(--height);
+	height: var(--width);
+	transform: rotate(-90deg) translateY(var(--negative-height));
+	transform-origin: top right;
+	scrollbar-width: none;
+}
+
+#Main ul {
+	--width: 100vw;
+	transform: rotate(90deg) translateX(var(--width));
+	transform-origin: top right;
+	width: var(--width);
+	height: 0;
+	float: right;
 }
 
 body.blog #Main img, body.single #Main img, body.archive #Main img {
@@ -234,7 +252,8 @@ ul.hGallery li h2 {
 	margin-left: 1ex;
 }
 
-.grid-ish li {
+.grid-ish > li {
+	min-width: calc(100vw / 6);
 	flex: 1 0 0;
 }
 
@@ -531,11 +550,6 @@ article > time {
 
 @media (max-width: 900px) {
 
-	body > header {
-		height:70px;
-	}
-
-
 h1, h1 a {
 		font-size:32px;
 	}
@@ -556,7 +570,7 @@ h1, h1 a {
 		flex-wrap: wrap;
 	}
 
-	.grid-ish > * {
+	.grid-ish > li {
 		min-width: 33%;
 	}
 
@@ -746,7 +760,6 @@ footer.options {
 		display:block;
 		width:360px;
 		clear:both;
-		float:none;
 		padding:0.5em 0;
 		font-size: 16px;
 	}
@@ -762,12 +775,6 @@ footer.options {
 	ul.hGallery li h2 {
 		font-size: 12px;
 	}
-
-	body > header {
-		height:100px;
-	}
-
-	
 
 	ul.hGallery:not(.grid-ish){
 		height:70vw;
@@ -810,6 +817,13 @@ article > time {
 #Main > article {
 	margin-top:8.5em;
 }
+}
+
+@media (max-width: 400px) {
+	.grid-ish.hGallery .img {
+		min-height: 100px;
+		max-height: calc((100vh - 300px) /2);
+	}
 }
 
 nav img {
