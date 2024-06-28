@@ -1,3 +1,15 @@
+:root{
+	--grey-100: oklab(95.51% 0 0);
+	--grey-120: oklab(94.91% 0 0);
+	--grey-150: oklab(89.75% 0 0);
+	--grey-200: oklab(80.78% 0 0);
+	--grey-400: oklab(51.03% 0 0);
+	--grey-450: oklab(44.95% 0 0);
+	--grey-500: oklab(38.67% 0 0);
+	--grey-600: oklab(32.1% 0 0);
+	--grey-700: oklab(25.2% 0 0);
+}
+
 .more-link {
 display:block;
 margin-top:1em
@@ -15,7 +27,7 @@ font-size:80%;
 
 
 .navigation a {
-color:#333333;
+color:var(--grey-600);
 text-decoration:none;
 margin-right:2em;
 }
@@ -74,7 +86,7 @@ body {
 font-weight:400;
 	background:white;
 	font-family: 'Josefin Sans', sans-serif;
-	color:silver;
+	color:var(--grey-200);
 	overflow: hidden;
 }
 
@@ -83,7 +95,7 @@ h1, h1 a {
 	font-family: 'Crimson Text', serif;
 	font-size:40px;
 	font-weight:normal;
-	color:#222222;
+	color:var(--grey-700);
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -92,7 +104,7 @@ h2 {
 	font-size:20px;
 	font-weight:400;
 	font-family:'Josefin Sans';
-	color:silver;
+	color:var(--grey-200);
 	text-transform: uppercase;
 }
 
@@ -100,7 +112,7 @@ h3 {
 	font-size:18px;
 	font-weight:400;
 	font-family:'Josefin Sans';
-	color:silver;
+	color:var(--grey-200);
 	text-transform: uppercase;
 }
 
@@ -154,7 +166,7 @@ header nav ul {
 
 header nav ul li, header nav ul li a {
 	display:inline-block;
-	color:silver;
+	color:var(--grey-200);
 	text-decoration:none;
 
 }
@@ -201,7 +213,7 @@ body.blog #Main img, body.single #Main img, body.archive #Main img {
 body.blog #Main input, body.single #Main input, body.archive #Main input, body.blog #Main textarea, body.single #Main textarea, body.archive #Main textarea  {
 	max-width:100%;
 	background:white;
-        border:1px solid silver;
+        border:1px solid var(--grey-200);
 }
 
 ul.hGallery {
@@ -263,11 +275,11 @@ ul.hGallery.fullTriple li {
 }
 
 ul.hGallery li.dustJacketText {
-	background-color:#222222;
+	background-color:var(--grey-700);
 	width:14em;
 	min-width:14em;
 	white-space:normal;
-	color:#f0f0f0;
+	color:var(--grey-100);
 	padding:1.8ex 2.5ex;
 	text-transform:none;
 	font-family:'Josefin Sans';
@@ -293,7 +305,7 @@ ul.hGallery li.text {
 }
 
 ul.hGallery li.text * {
-	color:#dddddd;
+	color:var(--grey-150);
 }
 
 ul.hGallery li.text h2 {
@@ -324,11 +336,11 @@ ul.hGallery li.text h2 {
 }
 
 .wallLabel h3 {
-	color:#444444;
+	color:var(--grey-500);
 }
 
 .wallLabel p {
-	color:#666666;
+	color:var(--grey-400);
 	font-size: 15px;
 }
 
@@ -361,11 +373,11 @@ ul.hGallery li.text h2 {
 #Main.textOnly > * {
 	margin:0.7em 0;
 	flex-grow: 0;
-	color:#666666;
+	color:var(--grey-400);
 }
 
 #Main.textOnly > * a {
-	color:#666666;
+	color:var(--grey-400);
 }
 
 footer.copyright, footer.options {
@@ -410,7 +422,7 @@ footer.options {
 #Main > article, #comments, #Main > header {
 	max-width:600px;
 	margin:0 auto;
-	color:#333333;
+	color:var(--grey-600);
 	margin-top:2.5em;
 	position:relative;
 }
@@ -418,13 +430,12 @@ footer.options {
 
 
 article a {
-	color:#333333;
+	color:var(--grey-600);
 }
 
 article h2, article h2 a {
 	margin-top:0;
-	color:black;
- 	color: #222222;
+	color: var(--grey-700);
     	font-family: "Crimson Text",serif;
     	font-size: 30px;
     	font-weight: normal;
@@ -432,7 +443,7 @@ article h2, article h2 a {
 }
 
 article h3 {
-	color:#333333;
+	color:var(--grey-600);
 	font-weight:bold;
 	font-size: 20px;
     	font-weight: bold;
@@ -453,7 +464,7 @@ article > time {
 	top:57px;
 	left:-350px;
 	width:250px;
-	color:silver;
+	color:var(--grey-200);
 	text-align:right;
 }
 
@@ -467,11 +478,11 @@ aside {
 	top:90px;
 	right:0;
 	width:15em;
-	background-color:#eeeeee;
+	background-color:var(--grey-120);
 
 	padding:1em;
 	height:100%;
-	color:#555555;
+	color:var(--grey-450);
 }
 
 aside ul {
@@ -485,7 +496,7 @@ aside ul li {
 
 
 aside a {
-	color:#555555;
+	color:var(--grey-450);
 	text-decoration:none;
 	
 }
@@ -517,7 +528,7 @@ aside h2 {
 }
 
 .single header, .blog header, .archive > header {
-    box-shadow: 0 3px 3px #eeeeee;
+    box-shadow: 0 3px 3px var(--grey-120);
 }
 
 .single #Main, .blog #Main, .category #Main, .archive #Main {
@@ -810,7 +821,7 @@ article > time {
 	top:-2.5em;
 	left:0;
 	width:auto;
-	color:silver;
+	color:var(--grey-200);
 	text-align:left;
 }
 
