@@ -247,7 +247,7 @@ ul.hGallery li > a {
 
 ul.hGallery li div.img {
 	height:500px;
-	height:50vw;
+	height:70vh;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -257,7 +257,7 @@ ul.hGallery li div.img {
 ul.hGallery li img, ul.hGallery li iframe {
 	display: block;
 	height:500px;
-	height:50vw;
+	height:70vh;
 	max-height: calc(100vh - 90px - 90px);
 }
 
@@ -620,13 +620,13 @@ h1, h1 a {
 
 ul.hGallery li div.img {
 	height:340px;
-	height:50vw;
+	height:70vh;
 	max-height: calc(100vh - 90px - 90px);
 }
 
 ul.hGallery li img {
 	height:340px;
-	height:50vw;
+	height:70vh;
 	max-height: calc(100vh - 90px - 90px);
 }
 
@@ -706,13 +706,13 @@ body > header {
 
 ul.hGallery li div.img {
 	height:150px;
-	height:50vw;
+	height:70vh;
 	max-height: calc(100vh - 90px - 10px);
 }
 
 ul.hGallery li img {
 	height:150px;
-	height:50vw;
+	height:70vh;
 	max-height: calc(100vh - 90px - 10px);
 }
 
@@ -793,11 +793,11 @@ footer.options {
 	}
 
 	ul.hGallery:not(.grid-ish){
-		height:70vw;
+		height:70vh;
 	}
 
 	ul.hGallery:not(.grid-ish) li {
-		height:70vw;
+		height:70vn;
 	}
 
 	.grid-ish.hGallery .img {
@@ -805,11 +805,11 @@ footer.options {
 	}
 
 	ul.hGallery li div.img {
-		height:70vw;
+		height:70vh;
 	}
 
 	ul.hGallery li img, ul.hGallery li iframe {
-		height:70vw;
+		height:70vh;
 	}
 	
  ul.hGallery li iframe {
