@@ -248,7 +248,6 @@ ul.hGallery li > a {
 }
 
 .hGallery a:hover h2 {
-  font-weight: 500;
   color: var(--grey-500);
 }
 
