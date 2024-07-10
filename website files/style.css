@@ -11,6 +11,12 @@
   --grey-700: oklab(25.2% 0 0);
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .more-link {
   display: block;
   margin-top: 1em;
@@ -398,7 +404,6 @@ footer.options {
   height: auto;
   text-transform: uppercase;
   font-size: 12px;
-  box-sizing: border-box;
 }
 
 footer.copyright {
