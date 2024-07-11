@@ -22,36 +22,6 @@
   margin-top: 1em;
 }
 
-@font-face {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Josefin Sans Regular"),
-    local("JosefinSans-Regular"),
-    url(./JosefinSans-Regular.woff) format("woff2");
-}
-
-@font-face {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: bold;
-  src:
-    local("Josefin Sans SemiBold"),
-    local("JosefinSans-SemiBold"),
-    url(./JosefinSans-SemiBold.woff) format("woff2");
-}
-
-@font-face {
-  font-family: "Josefin Sans";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local("Josefin Sans Italic"),
-    local("JosefinSans-Italic"),
-    url(./JosefinSans-Italic.woff) format("woff2");
-}
-
 html {
   width: 100%;
   height: 100%;
