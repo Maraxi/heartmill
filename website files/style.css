@@ -18,16 +18,6 @@
   box-sizing: border-box;
 }
 
-.more-link {
-  display: block;
-  margin-top: 1em;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0 0 0 0;
@@ -334,18 +324,6 @@ footer.options {
   background-position: left 45%;
   background-size: 33px auto;
   cursor: pointer;
-}
-
-#Main > header {
-  max-width: 600px;
-  margin: 0 auto;
-  color: var(--grey-600);
-  margin-top: 2.5em;
-  position: relative;
-}
-
-main nav {
-  display: none;
 }
 
 @media (max-width: 1199px) and (min-width: 701px) {
