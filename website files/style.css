@@ -1,7 +1,6 @@
 :root {
   --white: oklab(100% 0 0);
   --grey-100: oklab(95.51% 0 0);
-  --grey-120: oklab(94.91% 0 0);
   --grey-150: oklab(89.75% 0 0);
   --grey-200: oklab(80.78% 0 0);
   --grey-300: oklab(70.31% 0 0);
