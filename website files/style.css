@@ -35,7 +35,7 @@ h1,
 h1 a {
   font-family: "Crimson Text", serif;
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--grey-700);
   text-transform: uppercase;
   text-decoration: none;
