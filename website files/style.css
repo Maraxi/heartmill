@@ -277,22 +277,6 @@ ul.hGallery li.text h2 {
   font-size: 15px;
 }
 
-#ScrollArrow {
-  position: fixed;
-  right: 15px;
-  top: 130px;
-  z-index: 100;
-  opacity: 0;
-  transition: 0.5s opacity;
-  padding: 18px 0;
-  cursor: pointer;
-}
-
-#ScrollArrow img {
-  width: 50px;
-  height: 12px;
-}
-
 footer.copyright,
 footer.options {
   position: absolute;
@@ -400,10 +384,6 @@ footer.options {
     height: 340px;
     height: 50vw;
     max-height: calc(100vh - 90px - 90px);
-  }
-
-  #ScrollArrow {
-    padding: 9px 0;
   }
 
   ul.hGallery.wall li img {
