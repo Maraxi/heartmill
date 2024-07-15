@@ -116,6 +116,11 @@ header nav ul li ~ li::before {
   margin-left: 1ex;
 }
 
+nav img {
+  border: none;
+  height: 1.9ex;
+}
+
 #Main {
   --height: calc(100vh - 100px);
   --negative-height: calc(-1 * var(--height));
@@ -578,9 +583,4 @@ footer.options {
     min-height: 100px;
     max-height: calc((100vh - 300px) / 2);
   }
-}
-
-nav img {
-  border: none;
-  height: 1.9ex;
 }
