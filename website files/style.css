@@ -9,6 +9,8 @@
   --grey-500: oklab(38.67% 0 0);
   --grey-600: oklab(32.1% 0 0);
   --grey-700: oklab(25.2% 0 0);
+
+  --footer-height: 3rem;
 }
 
 *,
@@ -26,12 +28,31 @@ body {
   height: 100dvh;
 
   overflow: hidden;
+  display: flex;
   flex-direction: column;
 
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   background: var(--white);
   color: var(--grey-300);
+}
+
+#Main {
+  flex-grow: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#Main ul {
+  height: 100%;
+}
+
+#Main li {
+  margin-bottom: var(--footer-height);
+}
+
+#Main .dustJacketText {
+  box-shadow: 0 var(--footer-height) 0 0 var(--grey-700);
 }
 
 h1,
@@ -72,12 +93,6 @@ header {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-body > header {
-  width: 100%;
-  -webkit-flex: 0 1 auto;
-  flex-grow: 0;
   margin-bottom: 10px;
 }
 
@@ -139,28 +154,6 @@ nav img {
   height: 1.9ex;
 }
 
-#Main {
-  --height: calc(100vh - 100px);
-  --negative-height: calc(-1 * var(--height));
-  --width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: relative;
-  width: var(--height);
-  height: var(--width);
-  transform: rotate(-90deg) translateY(var(--negative-height));
-  transform-origin: top right;
-  scrollbar-width: none;
-}
-
-#Main ul {
-  --width: 100vw;
-  transform: rotate(90deg) translateX(var(--width));
-  transform-origin: top right;
-  width: var(--width);
-  height: 0;
-  float: right;
-}
 
 header nav a {
   vertical-align: middle;
