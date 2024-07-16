@@ -37,7 +37,6 @@ h1 a {
   font-weight: 400;
   color: var(--grey-700);
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 h2 {
@@ -54,6 +53,14 @@ h3 {
   font-family: "Josefin Sans";
   color: var(--grey-300);
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 header {
@@ -95,14 +102,12 @@ header nav {
 header nav ul {
   margin: 2.35em 1em 0 1em;
   padding: 0;
-  list-style-type: none;
 }
 
 header nav ul li,
 header nav ul li a {
   display: inline-block;
   color: var(--grey-300);
-  text-decoration: none;
 }
 
 header nav ul li a:hover {
@@ -148,7 +153,6 @@ ul.hGallery {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   position: relative;
   /*height:50vw;
   max-height: calc(100vh - 90px);*/
@@ -164,7 +168,6 @@ ul.hGallery li {
 
 ul.hGallery li > a {
   display: block;
-  text-decoration: none;
 }
 
 .hGallery a:hover h2 {
