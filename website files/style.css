@@ -43,15 +43,15 @@ main {
   overflow-y: hidden;
 }
 
-#Main ul {
+main ul {
   height: 100%;
 }
 
-#Main li {
+.hGallery li {
   margin-bottom: var(--footer-height);
 }
 
-#Main .dustJacketText {
+.dustJacketText {
   box-shadow: 0 var(--footer-height) 0 0 var(--grey-700);
 }
 
