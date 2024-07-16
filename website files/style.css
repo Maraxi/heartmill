@@ -175,7 +175,7 @@ ul.hGallery li > a {
   display: block;
 }
 
-.hGallery a:hover h2 {
+#Main a:hover h2 {
   color: var(--grey-500);
 }
 
