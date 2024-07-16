@@ -70,6 +70,7 @@ ul {
 header {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -106,11 +107,11 @@ header nav {
 header nav ul {
   margin: 0 1em;
   padding: 0;
+  display: flex;
 }
 
 header nav ul li,
 header nav ul li a {
-  display: inline-block;
   color: var(--grey-300);
 }
 
@@ -118,7 +119,17 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-header nav ul li ~ li::before {
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dotted-list > * {
+  display: contents;
+  white-space: nowrap;
+}
+
+.dotted-list > * + *::before {
   content: "·";
   margin: 0 1ex;
 }
@@ -149,6 +160,10 @@ nav img {
   width: var(--width);
   height: 0;
   float: right;
+}
+
+header nav a {
+  vertical-align: middle;
 }
 
 ul.hGallery {
