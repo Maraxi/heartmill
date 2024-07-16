@@ -1,5 +1,5 @@
 (function () {
-  let scrollElement = document.querySelector("#Main");
+  let scrollElement = document.querySelector("main");
 
   window.addEventListener("wheel", (event) => {
     /* do not scroll horizontal when focusing dustJacket with scrollbar */
