@@ -19,15 +19,19 @@
 
 body {
   margin: 0;
-  padding: 0 0 0 0;
+  padding: 0;
+
   width: 100vw;
   height: 100vh;
-  height: 100svh;
+  height: 100dvh;
+
+  overflow: hidden;
+  flex-direction: column;
+
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   background: var(--white);
-  font-family: "Josefin Sans", sans-serif;
   color: var(--grey-300);
-  overflow: hidden;
 }
 
 h1,
@@ -100,7 +104,7 @@ header nav {
 }
 
 header nav ul {
-  margin: 2.35em 1em 0 1em;
+  margin: 0 1em;
   padding: 0;
 }
 
@@ -116,8 +120,7 @@ header nav ul li a:hover {
 
 header nav ul li ~ li::before {
   content: "·";
-  margin-right: 1ex;
-  margin-left: 1ex;
+  margin: 0 1ex;
 }
 
 nav img {
