@@ -319,17 +319,34 @@ ul.hGallery li.text h2 {
 #ScrollArrow {
   position: fixed;
   right: 15px;
-  top: 130px;
+  bottom: 2.8em;
+  width: 55px;
   z-index: 100;
-  opacity: 0;
-  transition: 0.5s opacity;
-  padding: 18px 0;
-  cursor: pointer;
+  transition: 1s opacity;
+  filter: drop-shadow(var(--white) 0 0 2px);
+
+  animation-name: hint;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
-#ScrollArrow img {
-  width: 50px;
-  height: 12px;
+@keyframes hint {
+  0% {
+    right: 15px;
+  }
+  83% {
+    right: 15px;
+  }
+  93% {
+    right: 35px;
+  }
+  100% {
+    right: 15px;
+  }
+}
+
+#ScrollArrow[hide] {
+  opacity: 0;
 }
 
 footer.copyright,

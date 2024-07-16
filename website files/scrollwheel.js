@@ -28,4 +28,15 @@
       }
     }
   });
+
+  function fadeHint(event) {
+    if (scrollElement.scrollLeft > 200) {
+      scrollElement.removeEventListener("scroll", fadeHint);
+      let arrow = document.getElementById("ScrollArrow");
+      arrow.setAttribute("hide", "");
+      setTimeout(() => arrow.remove(), 1000);
+    }
+  }
+
+  scrollElement.addEventListener("scroll", fadeHint);
 })();
