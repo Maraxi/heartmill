@@ -177,9 +177,6 @@ ul.hGallery li > a {
 ul.hGallery li div.img {
   height: 500px;
   height: 50vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   max-height: calc(100vh - 90px - 90px);
 }
 
@@ -245,6 +242,12 @@ ul.hGallery li.text * {
 
 ul.hGallery li.text h2 {
   margin-left: 0;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .wall li:first-child {
