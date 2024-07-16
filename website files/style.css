@@ -388,18 +388,6 @@ footer.options {
     --max-img-height: 100vh;
   }
 
-  .grid-ish {
-    flex-wrap: wrap;
-  }
-
-  .grid-ish > li {
-    min-width: 33%;
-  }
-
-  .grid-ish.hGallery .img {
-    max-height: calc((100vh - 70px - 50px) / 2 - 32px);
-  }
-
   ul.hGallery li h2 {
     font-size: 12px;
   }
@@ -577,16 +565,12 @@ footer.options {
     font-size: 12px;
   }
 
-  ul.hGallery:not(.grid-ish) {
+  ul.hGallery {
     height: 70vw;
   }
 
-  ul.hGallery:not(.grid-ish) li {
+  ul.hGallery li {
     height: 70vw;
-  }
-
-  .grid-ish.hGallery .img {
-    max-height: calc((100vh - 100px - 50px) / 2 - 32px);
   }
 
   ul.hGallery li div.img {
@@ -608,11 +592,6 @@ footer.options {
 }
 
 @media (max-width: 400px) {
-  .grid-ish.hGallery .img {
-    min-height: 100px;
-    max-height: calc((100vh - 300px) / 2);
-  }
-
   .main-grid {
     --cols: 2;
     --rows: 3;
