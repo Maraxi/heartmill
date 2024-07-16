@@ -293,7 +293,7 @@ ul.hGallery li.text h2 {
 
 footer.copyright,
 footer.options {
-  position: absolute;
+  position: fixed;
   bottom: 15px;
   height: auto;
   text-transform: uppercase;
