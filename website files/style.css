@@ -157,7 +157,7 @@ header nav a {
   vertical-align: middle;
 }
 
-ul.hGallery {
+.hGallery {
   display: -webkit-box;
   display: flex;
   margin: 0;
@@ -165,13 +165,13 @@ ul.hGallery {
   position: relative;
 }
 
-ul.hGallery li {
+.hGallery li {
   padding: 0;
   margin: 0;
   z-index: 0;
 }
 
-ul.hGallery li > a {
+.hGallery li > a {
   display: block;
 }
 
@@ -179,25 +179,25 @@ main a:hover h2 {
   color: var(--grey-500);
 }
 
-ul.hGallery li div.img {
+.hGallery li div.img {
   height: 500px;
   height: 50vw;
   max-height: calc(100vh - 90px - 90px);
 }
 
-ul.hGallery li img,
-ul.hGallery li iframe {
+.hGallery li img,
+.hGallery li iframe {
   display: block;
   height: 500px;
   height: 50vw;
   max-height: calc(100vh - 90px - 90px);
 }
 
-ul.hGallery li iframe {
+.hGallery li iframe {
   width: min(calc(50vw / 9 * 16), calc((100vh - 90px - 90px) / 9 * 16));
 }
 
-ul.hGallery li h2 {
+.hGallery li h2 {
   margin-left: 1ex;
 }
 
@@ -235,12 +235,12 @@ ul.hGallery li h2 {
   max-height: var(--max-img-height);
 }
 
-ul.hGallery.fullTriple li {
+.hGallery.fullTriple li {
   min-width: 33.34%;
   min-width: 33.3333vw;
 }
 
-ul.hGallery li.dustJacketText {
+.hGallery li.dustJacketText {
   background-color: var(--grey-700);
   width: 14em;
   min-width: 14em;
@@ -257,24 +257,24 @@ ul.hGallery li.dustJacketText {
   overflow-y: auto;
 }
 
-ul.hGallery li.dustJacketText h2 {
+.hGallery li.dustJacketText h2 {
   margin-left: 0;
 }
 
-ul.hGallery li.dustJacketText h3 {
+.hGallery li.dustJacketText h3 {
   font-size: 20px;
 }
 
-ul.hGallery li.text {
+.hGallery .text {
   padding: 1em;
   text-align: center;
 }
 
-ul.hGallery li.text * {
+.hGallery .text * {
   color: var(--grey-150);
 }
 
-ul.hGallery li.text h2 {
+.hGallery .text h2 {
   margin-left: 0;
 }
 
@@ -415,36 +415,36 @@ footer.options {
     --max-img-height: 100vh;
   }
 
-  ul.hGallery li h2 {
+  .hGallery h2 {
     font-size: 12px;
   }
 
-  ul.hGallery li.dustJacketText {
+  .hGallery li.dustJacketText {
     width: 9em;
     min-width: 9em;
     font-size: 12px;
   }
 
-  ul.hGallery li.dustJacketText h2 {
+  .hGallery li.dustJacketText h2 {
     font-size: 13px;
     margin: 3px 0;
   }
 
-  ul.hGallery li.dustJacketText h3 {
+  .hGallery li.dustJacketText h3 {
     font-size: 12px;
   }
 
-  ul.hGallery li.dustJacketText {
+  .hGallery li.dustJacketText {
     height: calc(100vh - 60px - 2.5ex);
   }
 
-  ul.hGallery li div.img {
+  .hGallery li div.img {
     height: 340px;
     height: 50vw;
     max-height: calc(100vh - 90px - 90px);
   }
 
-  ul.hGallery li img {
+  .hGallery li img {
     height: 340px;
     height: 50vw;
     max-height: calc(100vh - 90px - 90px);
@@ -454,7 +454,7 @@ footer.options {
     padding: 9px 0;
   }
 
-  ul.hGallery.wall li img {
+  .hGallery.wall li img {
     height: 50vw;
   }
 
@@ -517,23 +517,23 @@ footer.options {
     height: 56px;
   }
 
-  ul.hGallery li div.img {
+  .hGallery li div.img {
     height: 150px;
     height: 50vw;
     max-height: calc(100vh - 90px - 10px);
   }
 
-  ul.hGallery li img {
+  .hGallery li img {
     height: 150px;
     height: 50vw;
     max-height: calc(100vh - 90px - 10px);
   }
 
-  ul.hGallery li.dustJacketText {
+  .hGallery li.dustJacketText {
     height: calc(100vh - 60px - 2.5ex);
   }
 
-  ul.hGallery li.dustJacketText h2 {
+  .hGallery li.dustJacketText h2 {
     margin: 5px 0px;
   }
 
@@ -592,32 +592,32 @@ footer.options {
     font-size: 14px;
   }
 
-  ul.hGallery li h2 {
+  .hGallery li h2 {
     font-size: 12px;
   }
 
-  ul.hGallery {
+  .hGallery {
     height: 70vw;
   }
 
-  ul.hGallery li {
+  .hGallery li {
     height: 70vw;
   }
 
-  ul.hGallery li div.img {
+  .hGallery li div.img {
     height: 70vw;
   }
 
-  ul.hGallery li img,
-  ul.hGallery li iframe {
+  .hGallery li img,
+  .hGallery li iframe {
     height: 70vw;
   }
 
-  ul.hGallery li iframe {
+  .hGallery li iframe {
     width: min(calc(70vw / 9 * 16), calc((100vh - 90px - 90px) / 9 * 16));
   }
 
-  ul.hGallery li.dustJacketText {
+  .hGallery li.dustJacketText {
     height: calc(100vh - 100px - 2.5ex);
   }
 }
