@@ -385,12 +385,6 @@ footer.options {
   cursor: pointer;
 }
 
-@media (max-width: 1199px) and (min-width: 701px) {
-  main > header {
-    max-width: 40vw;
-  }
-}
-
 @media (max-width: 900px) {
   h1,
   h1 a {
