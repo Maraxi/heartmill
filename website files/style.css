@@ -157,7 +157,7 @@ header nav a {
   vertical-align: middle;
 }
 
-.hGallery {
+.hGallery, .contact {
   display: -webkit-box;
   display: flex;
   margin: 0;
@@ -314,6 +314,22 @@ main a:hover h2 {
 .wallLabel p {
   color: var(--grey-400);
   font-size: 15px;
+}
+
+.contact {
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .text {
+  text-align: center;
+  padding: 8em;
+}
+
+.contact img {
+  height: 50vw;
+  max-height: 70vh;
 }
 
 #ScrollArrow {
@@ -475,10 +491,16 @@ footer.options {
     font-size: 12px;
   }
 
-  .contact li {
-    padding-top: 0px !important;
-    font-size: 10px;
-    width: 10em;
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact .text {
+    padding: 2em 2em 0;
+  }
+
+  .contact img {
+    height: 80vw;
   }
 
   footer.copyright {
