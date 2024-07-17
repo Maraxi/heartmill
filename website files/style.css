@@ -327,6 +327,7 @@ ul.hGallery li.text h2 {
 
   animation-name: hint;
   animation-duration: 4s;
+  animation-delay: 1.5s;
   animation-iteration-count: infinite;
 }
 
@@ -334,13 +335,10 @@ ul.hGallery li.text h2 {
   0% {
     right: 15px;
   }
-  83% {
-    right: 15px;
-  }
-  93% {
+  10% {
     right: 35px;
   }
-  100% {
+  17% {
     right: 15px;
   }
 }
