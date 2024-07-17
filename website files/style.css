@@ -284,36 +284,26 @@ main a:hover h2 {
   background-position: center center;
 }
 
-.wall li:first-child {
-  position: absolute;
-  right: 51vw;
-}
-
-.wall li:first-child img {
-  box-shadow: 0 3px 25px var(--grey-400);
-  margin: 25px;
-}
-
-.wall li:last-child {
-  position: absolute;
-  left: 51vw;
+.about {
   display: flex;
-  height: 50vw;
-  max-height: calc(100vh - 90px - 90px);
+  align-items: flex-end;
+  height: min(fit-content, 60%);
+  padding: 0 3em;
 }
 
-.wallLabel {
-  width: 30em;
-  align-self: flex-end;
+.about div {
+  padding: 0 0 4em;
 }
 
-.wallLabel h3 {
-  color: var(--grey-500);
-}
-
-.wallLabel p {
+.about div > * {
   color: var(--grey-400);
-  font-size: 15px;
+}
+
+.about img {
+  margin: 25px;
+  width: 45vw;
+
+  box-shadow: 0 3px 25px var(--grey-400);
 }
 
 .contact {
@@ -464,31 +454,17 @@ footer.options {
     padding: 9px 0;
   }
 
-  .hGallery.wall li img {
-    height: 50vw;
+  .about {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .wall li:first-child {
-    position: absolute;
-    right: 51vw;
+  .about div {
+    width: clamp(150px, 70vw, 70vw);
   }
 
-  .wall li:last-child {
-    position: absolute;
-    left: 50.5vw;
-    display: flex;
-    height: 50vh;
-    max-height: calc(100vh - 90px - 10px);
-    margin-top: 15px;
-  }
-
-  .wallLabel {
-    width: 10em;
-    align-self: flex-start;
-  }
-
-  .wallLabel p {
-    font-size: 12px;
+  .about img {
+    width: clamp(150px, 80vw, 550px);
   }
 
   .contact {
@@ -571,10 +547,6 @@ footer.options {
 
   footer.options {
     right: 5px;
-  }
-
-  .wallLabel {
-    width: 15em;
   }
 }
 
