@@ -157,7 +157,8 @@ header nav a {
   vertical-align: middle;
 }
 
-.hGallery, .contact {
+.hGallery,
+.contact {
   display: -webkit-box;
   display: flex;
   margin: 0;
@@ -287,11 +288,13 @@ main a:hover h2 {
 .about {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   height: min(fit-content, 60%);
   padding: 0 3em;
 }
 
 .about div {
+  max-width: 50ch;
   padding: 0 0 4em;
 }
 
@@ -301,7 +304,8 @@ main a:hover h2 {
 
 .about img {
   margin: 25px;
-  width: 45vw;
+  max-width: 45vw;
+  max-height: 60vh;
 
   box-shadow: 0 3px 25px var(--grey-400);
 }
@@ -464,7 +468,9 @@ footer.options {
   }
 
   .about img {
-    width: clamp(150px, 80vw, 550px);
+    margin-top: 0;
+    max-width: unset;
+    max-height: 40vh;
   }
 
   .contact {
@@ -614,5 +620,9 @@ footer.options {
   .main-grid {
     --cols: 2;
     --rows: 3;
+  }
+
+  .about div * {
+    font-size: 12px;
   }
 }
