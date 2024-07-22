@@ -1,14 +1,14 @@
 :root {
-  --white: oklab(100% 0 0);
-  --grey-100: oklab(95.51% 0 0);
-  --grey-150: oklab(89.75% 0 0);
-  --grey-200: oklab(80.78% 0 0);
-  --grey-300: oklab(70.31% 0 0);
-  --grey-400: oklab(51.03% 0 0);
-  --grey-450: oklab(44.95% 0 0);
-  --grey-500: oklab(38.67% 0 0);
-  --grey-600: oklab(32.1% 0 0);
-  --grey-700: oklab(25.2% 0 0);
+  --white: oklch(100% 0 0);
+  --grey-100: oklch(95.51% 0 0);
+  --grey-150: oklch(89.75% 0 0);
+  --grey-200: oklch(80.78% 0 0);
+  --grey-300: oklch(70.31% 0 0);
+  --grey-400: oklch(51.03% 0 0);
+  --grey-450: oklch(44.95% 0 0);
+  --grey-500: oklch(38.67% 0 0);
+  --grey-600: oklch(32.1% 0 0);
+  --grey-700: oklch(25.2% 0 0);
 
   --footer-height: 3rem;
 }
