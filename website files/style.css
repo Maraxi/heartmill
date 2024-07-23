@@ -293,19 +293,19 @@ main a:hover h2 {
   padding: 0 3em;
 }
 
-.about div {
+.about article {
   max-width: 50ch;
   padding: 0 0 4em;
 }
 
-.about div > * {
+.about article > * {
   color: var(--grey-400);
 }
 
 .about img {
   margin: 25px;
   max-width: 45vw;
-  max-height: 60vh;
+  max-height: 75vh;
 
   box-shadow: 0 3px 25px var(--grey-400);
 }
@@ -463,7 +463,7 @@ footer.options {
     align-items: center;
   }
 
-  .about div {
+  .about article {
     width: clamp(150px, 70vw, 70vw);
   }
 
@@ -622,7 +622,7 @@ footer.options {
     --rows: 3;
   }
 
-  .about div * {
+  .about article * {
     font-size: 12px;
   }
 }
