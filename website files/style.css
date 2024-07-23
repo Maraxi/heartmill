@@ -377,15 +377,6 @@ footer.options {
   text-align: right;
 }
 
-.socialSharing {
-  padding: 3px 22px 3px 1ex;
-  background-image: url(share.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 18px auto;
-  cursor: pointer;
-}
-
 .back {
   padding: 3px 1ex 3px 37px;
   background-image: url(left-arrow.svg);
