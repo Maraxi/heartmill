@@ -157,6 +157,10 @@ header nav a {
   vertical-align: middle;
 }
 
+.slogan {
+  margin: 0 20px;
+}
+
 .hGallery,
 .contact {
   display: -webkit-box;
