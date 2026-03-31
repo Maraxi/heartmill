@@ -2,4 +2,4 @@
 
 # Host locally
 
-python -m http.server -d "website files" &
+python -m http.server -d "heartmill.com" &
